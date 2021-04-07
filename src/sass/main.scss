@@ -1,5 +1,10 @@
+// Базовые файлы
 @import 'normalize.scss';
 @import 'base.scss';
+
+// Утилиты и компоненты
 @import './utils/var.scss';
 @import './components/container.scss';
+
+// страницы
 @import './layout/header.scss';

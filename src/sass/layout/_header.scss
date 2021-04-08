@@ -1,3 +1,108 @@
-h1 {
-  color: red;
+.header {
+    &__flex-wrapper {
+        display: flex;
+    }
+    &__logo {
+        margin-right: 95px;
+    }
+    // }
+    .header-btn-list {
+        display: flex;
+        &__button {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            align-items: center;
+
+            border: none;
+
+            background: transparent;
+            border-radius: 5px;
+        }
+        .button-log {
+            border: 2px solid $btn-color;
+            padding: 9.5px 29px;
+        }
+        .button-reg {
+            color: #ffffff;
+            background-color: $btn-color;
+            padding-top: 11.5px;
+            padding-right: 30px;
+            padding-bottom: 11.5px;
+            padding-left: 31px;
+        }
+
+        &__button-lang {
+            font-family: $main-font;
+            font-size: 16px;
+
+            border: none;
+            background: transparent;
+            padding: 0;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 14px;
+                background-image: url('../images/header/flag-of-the-united-kingdom.svg');
+            }
+        }
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    .menu {
+        &__item {
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 82px;
+            }
+            &:nth-child(3) {
+                margin-right: 60px;
+            }
+            &:hover .submenu__list {
+                visibility: visible;
+            }
+        }
+        &__link {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+
+            color: $title-text;
+        }
+        &__list {
+            display: flex;
+            margin-right: 129px;
+        }
+    }
+    .submenu {
+        // &__item {
+
+        // }
+
+        //   &__link {
+        //   }
+        &__list {
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+}
+.logo {
+    font-family: $logo-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+
+    color: $title-text;
+    text-transform: uppercase;
 }

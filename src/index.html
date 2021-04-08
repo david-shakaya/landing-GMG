@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>title</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>title</title>
 
-    <!-- inject:css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- endinject -->
-  </head>
+        <!-- inject:css -->
+        <link rel="stylesheet" href="./css/styles.css" />
+        <!-- endinject -->
+    </head>
 
-  <body>
-    //= "./html/header.html"
-    <main></main>
-    <!-- inject:js -->
-    <script src="./js/index.js"></script>
-    <!-- endinject -->
-  </body>
+    <body>
+        //= "./html/pages/header.html"
+        <main>
+            <!--Секция Герой -->
+            //= "./html/pages/hero.html"
+
+            <!--Секция о продукте  -->
+            //= "./html/pages/about-product.html"
+
+            <!-- секция со слайдером -->
+            //= "./html/pages/where-get.html"
+
+            <!--  -->
+            //= "./html/pages/call-action.html"
+        </main>
+        <!-- inject:js -->
+        <script src="./js/index.js"></script>
+        <!-- endinject -->
+    </body>
 </html>

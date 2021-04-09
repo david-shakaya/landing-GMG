@@ -82,7 +82,7 @@
 
         &::after {
             background-blend-mode: multiply;
-            height: 1164px;
+            height: 1903px;
 
             width: 100vw;
 
@@ -90,17 +90,18 @@
             display: block;
             position: absolute;
 
-            top: 0;
+            top: -234px;
 
             z-index: -1;
             background-attachment: fixed;
             background-size: auto;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url(../../images/about-product/earth.svg);
-            background-image: url(../../images/about-product/paral2.svg);
 
-            background-color: rgba(204, 204, 204, 0.2);
+            background-image: url(../../images/about-product/Component1.svg);
+            opacity: 0.2;
+
+            background-color: rgba(196, 196, 196, 1);
         }
     }
 }

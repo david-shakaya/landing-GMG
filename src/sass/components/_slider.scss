@@ -1,0 +1,119 @@
+.pagination-slider {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+    &__btn {
+        width: 10px;
+        height: 10px;
+        border: none;
+        border-radius: 50%;
+
+        background: $title-light;
+        opacity: 0.5;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+}
+.slider {
+    // overflow-x: hidden;
+    &__button {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+
+        color: $title-light;
+        background-color: #ff7237;
+        border: none;
+        border-radius: 5px;
+
+        padding-left: 31px;
+        padding-right: 31px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__card {
+        & img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+            transform: translate(-50%, -46px);
+        }
+    }
+    &__item {
+        position: relative;
+
+        padding-top: 97px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: white;
+        margin-right: 30px;
+
+        box-shadow: 0px 2px 12px rgba(8, 35, 48, 0.2);
+        border-radius: 10px;
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 53px;
+    }
+    &__percent {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+
+        text-align: center;
+        margin-bottom: 56px;
+    }
+    &__price {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 29px;
+
+        text-align: center;
+        color: #4d4d4d;
+
+        margin-bottom: 34px;
+    }
+    &__title {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+
+        text-align: center;
+
+        color: $title-text;
+
+        width: 210px;
+        margin-bottom: 18px;
+    }
+}
+// .slidet {
+//   &__card {
+//   }
+//   &__price {
+//   }
+// }
+
+.positive-balance {
+    color: rgba(5, 178, 2, 1);
+}
+
+.negative-balance {
+    color: rgba(220, 27, 23, 1);
+}

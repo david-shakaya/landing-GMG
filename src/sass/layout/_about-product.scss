@@ -1,8 +1,10 @@
 .about-product {
     // background-color: rgba(204, 204, 204, 0.1);
 
-    //   &__card {
-    //   }
+    &__card {
+        padding-top: 33px;
+        text-align: left;
+    }
     &__description {
         display: flex;
         padding-top: 128px;
@@ -46,6 +48,7 @@
         line-height: 26px;
 
         margin-bottom: 40px;
+        width: 550px;
     }
     &__text-ic {
         font-family: $main-font;
@@ -107,19 +110,28 @@
 }
 .about-product-app {
     &__btn {
-        // display: block;
-
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // padding: 12px 19px;
-        // padding-left: 19px;
-        // padding-right: 19px;
-        // padding-top: 12px;
-        // padding-bottom: 12px;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 12px;
+        padding-bottom: 12px;
         background-color: transparent;
         border: 2px $btn-color solid;
+        border-radius: 5px;
+
+        &.first {
+            padding-left: 16px;
+            padding-right: 18px;
+            padding-top: 10px;
+            padding-bottom: 11px;
+        }
+        &.second {
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
     }
+
     &__item {
         &:not(:last-child) {
             margin-right: 25.5px;

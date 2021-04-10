@@ -20,7 +20,6 @@
     }
 }
 .slider {
-    // overflow-x: hidden;
     &__button {
         font-family: $main-font;
         font-style: normal;
@@ -106,12 +105,6 @@
         margin-bottom: 18px;
     }
 }
-// .slidet {
-//   &__card {
-//   }
-//   &__price {
-//   }
-// }
 
 .positive-balance {
     color: rgba(5, 178, 2, 1);
@@ -121,10 +114,9 @@
     color: rgba(220, 27, 23, 1);
 }
 
+/* --------------СТИЛИ ДЛЯ ПЛАГИНА------------------ */
+
 .splide__pagination {
-    //   left: 50%;
-    //     transform: translate(-50%, 3px);
-    //     padding: 0;
     padding-bottom: 99px;
     padding-left: 38px;
     & li {

@@ -21,23 +21,18 @@ paginationSliderBtn.forEach(btn => (btn.textContent = ''));
 // SLIDER
 
 new Splide('#splide', {
-    // type: 'loop',
-    // perPage: 3,
     type: 'loop',
     perPage: 2,
     perMove: 2,
     rewind: true,
-    // perMove: 3,
     fixedWidth: 270,
-    // autoWidth: true,
     arrows: false,
     focus: 'center',
     gap: 30,
-    // trimSpace: false,
-    // pagination: true,
-
     padding: {
         left: '20rem',
-        // right: '2rem',
     },
+
+    autoplay: true,
+    interval: 1500,
 }).mount();

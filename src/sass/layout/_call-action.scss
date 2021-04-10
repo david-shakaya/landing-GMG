@@ -1,0 +1,43 @@
+.call-action {
+    //   &__description {
+    //   }
+    //   &__flex-wrapper {
+    //   }
+    //   &__item {
+    //   }
+    //   &__list {
+    //   }
+    //   &__number {
+    //   }
+    //   &__subtitle {
+    //   }
+    //   &__text {
+    //   }
+    //   &__text-subtitle {
+    //   }
+    //   &__title {
+    //   }
+    &__wrapper {
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+
+            top: -34px;
+            left: 0;
+            width: 2253px;
+            height: 1241px;
+            background-image: url('../../images/call-action/parlax-backgr.png');
+
+            z-index: -1;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+// .container {
+// }

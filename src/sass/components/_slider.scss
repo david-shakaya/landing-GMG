@@ -1,7 +1,7 @@
 .pagination-slider {
     display: flex;
     justify-content: center;
-    padding-bottom: 110px;
+    padding-bottom: 109px;
     padding-top: 45px;
     visibility: hidden;
     &__btn {
@@ -122,12 +122,13 @@
 }
 
 .splide__pagination {
-    left: 48%;
-    transform: translateX(-47%);
-    padding: 0;
-    padding-bottom: 103px;
+    //   left: 50%;
+    //     transform: translate(-50%, 3px);
+    //     padding: 0;
+    padding-bottom: 99px;
+    padding-left: 38px;
     & li {
-        margin-right: 24px;
+        margin-right: 20px;
         &:nth-child(2n + 1) {
             display: none;
         }

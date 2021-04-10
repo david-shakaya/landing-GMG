@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     padding-bottom: 110px;
+    padding-top: 45px;
+    visibility: hidden;
     &__btn {
         width: 10px;
         height: 10px;
@@ -61,6 +63,7 @@
 
         box-shadow: 0px 2px 12px rgba(8, 35, 48, 0.2);
         border-radius: 10px;
+        margin-top: 83px;
     }
     &__list {
         display: flex;
@@ -116,4 +119,38 @@
 
 .negative-balance {
     color: rgba(220, 27, 23, 1);
+}
+
+.splide__pagination {
+    left: 48%;
+    transform: translateX(-47%);
+    padding: 0;
+    padding-bottom: 103px;
+    & li {
+        margin-right: 24px;
+        &:nth-child(2n + 1) {
+            display: none;
+        }
+    }
+
+    &__page {
+        width: 10px;
+        height: 10px;
+
+        background: $title-light;
+        opacity: 0.5;
+    }
+}
+
+.splide__pagination__page.is-active {
+    background-color: $title-light;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slider__item.splide__slide.is-visible {
+    opacity: 1;
+}
+.slider__item.splide__slide {
+    opacity: 0.2;
 }

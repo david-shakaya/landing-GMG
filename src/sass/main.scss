@@ -1,11 +1,12 @@
 // Базовые файлы
 @import 'normalize.scss';
+@import './utils/var.scss';
 @import 'base.scss';
 
-// Утилиты и компоненты
-@import './utils/var.scss';
+// компоненты
 @import './components/container.scss';
 @import './components/slider.scss';
+@import './components/form.scss';
 
 // страницы
 @import './layout/header.scss';

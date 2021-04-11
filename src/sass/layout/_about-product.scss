@@ -40,16 +40,10 @@
         margin-bottom: 134px;
     }
     &__text {
-        font-family: $main-font;
-        color: $body;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-
         margin-bottom: 40px;
         width: 550px;
     }
+
     &__text-ic {
         font-family: $main-font;
         color: $title-text;
@@ -61,12 +55,7 @@
         width: 222px;
     }
     &__title {
-        font-family: $main-font;
-        color: $title-text;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 38px;
-        line-height: 49px;
+       
         margin-bottom: 30px;
     }
     &__wrapper {

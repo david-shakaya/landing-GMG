@@ -1,22 +1,41 @@
 .call-action {
-    //   &__description {
-    //   }
-    //   &__flex-wrapper {
-    //   }
-    //   &__item {
-    //   }
+    &__description {
+        width: 510px;
+    }
+    &__flex-wrapper {
+        padding-top: 166px;
+        padding-bottom: 221px;
+
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
     //   &__list {
     //   }
     //   &__number {
     //   }
-    //   &__subtitle {
-    //   }
-    //   &__text {
-    //   }
+    &__subtitle {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+
+        color: $title-text;
+
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-bottom: 34px;
+    }
     //   &__text-subtitle {
     //   }
-    //   &__title {
-    //   }
+    &__title {
+        margin-bottom: 30px;
+    }
     &__wrapper {
         position: relative;
         overflow: hidden;
@@ -24,18 +43,27 @@
         &::after {
             content: '';
             position: absolute;
-
+            // background-blend-mode: multiply;
             top: -34px;
             left: 0;
             width: 2253px;
             height: 1241px;
-            background-image: url('../../images/call-action/parlax-backgr.png');
 
+            background-image: url('../../images/call-action/parlax-backgr.png');
             z-index: -1;
             background-attachment: fixed;
-            background-size: auto;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+        &::before {
+            z-index: -2;
+            position: absolute;
+            background-color: rgba(196, 196, 196, 1);
+            content: '';
+            opacity: 0.2;
+            width: 100vw;
+            height: 100vh;
         }
     }
 }

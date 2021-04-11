@@ -1,6 +1,12 @@
-.select.is-active .select__body {
+.select {
+    margin-top: 6px;
     position: relative;
+}
+
+.select.is-active .select__body {
+    position: absolute;
     display: block;
+    top: 62px;
 }
 
 .select__header {
@@ -19,7 +25,7 @@
     padding-right: 14px;
     padding-left: 14px;
     margin-top: 7px;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     opacity: 0.7;
 
     border: 1px solid #1d1d1d;
@@ -55,9 +61,13 @@
     border-top: 0;
     display: none;
     left: 0;
-    position: absolute;
     right: 0;
     top: -15px;
+
+    position: absolute;
+    background: white;
+    z-index: 1;
+    box-shadow: 0px 15px 40px rgba(8, 35, 48, 0.15);
 }
 .select__item {
     cursor: pointer;

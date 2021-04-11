@@ -1,0 +1,130 @@
+.contacts {
+    width: 270px;
+    margin-right: 130px;
+    margin-bottom: 30px;
+
+    &__adress {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $body;
+    }
+    &__logo {
+        margin-bottom: 39px;
+        display: block;
+    }
+    &__mail {
+        margin-bottom: 13px;
+        display: block;
+
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $body;
+    }
+    &__phone {
+        margin-bottom: 10px;
+        display: block;
+
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $body;
+    }
+}
+
+.contacts-menu-flex-wrapper {
+    display: flex;
+}
+// .container {
+// }
+// .footer {
+//   &__text-copyright {
+//   }
+// }
+.footer-menu {
+    &__item {
+        &:nth-child(1) {
+            margin-right: 153px;
+        }
+        &:nth-child(2) {
+            margin-right: 179px;
+        }
+        &:nth-child(3) {
+            margin-right: 117px;
+        }
+    }
+    &__link {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: $title-text;
+    }
+    &__list {
+        display: flex;
+        width: 697px;
+    }
+}
+.footer-submenu {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+    }
+    &__link {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $body;
+    }
+    &__list {
+        margin-top: 14px;
+    }
+}
+// .footer-text {
+//   &__description {
+//   }
+//   &__flex-left {
+//   }
+//   &__flex-right {
+//   }
+//   &__title {
+//   }
+// }
+// .logo {
+// }
+.payment {
+    display: flex;
+    align-items: center;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    //   &__logo {
+}
+
+// }
+.payment-text {
+    //   &__item {
+    //   }
+    &__list {
+        display: flex;
+    }
+    //   &__text {
+    //   }
+}

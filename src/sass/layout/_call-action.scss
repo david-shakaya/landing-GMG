@@ -1,12 +1,15 @@
 .call-action {
     &__description {
         width: 510px;
+        margin-right: 40px;
+        padding-top: 6px;
     }
     &__flex-wrapper {
         padding-top: 166px;
         padding-bottom: 221px;
 
         display: flex;
+        justify-content: center;
     }
     &__item {
         position: relative;
@@ -20,7 +23,7 @@
             position: absolute;
             height: 100%;
             width: 2px;
-            transform: translate(-14px, 0px);
+            transform: translate(-16px, 0px);
             background-color: rgba(235, 87, 87, 1);
         }
     }
@@ -76,22 +79,23 @@
             width: 2253px;
             height: 1241px;
 
-            background-image: url('../../images/call-action/parlax-backgr.png');
+            background: #f6f6f6;
+            background-image: url('../images/call-action/paral.png');
             z-index: -1;
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
-        &::before {
-            z-index: -2;
-            position: absolute;
-            background-color: rgba(196, 196, 196, 1);
-            content: '';
-            opacity: 0.2;
-            width: 100vw;
-            height: 100vh;
-        }
+        // &::before {
+        //     z-index: -2;
+        //     position: absolute;
+        //     background-color: rgba(196, 196, 196, 1);
+        //     content: '';
+        //     opacity: 0.2;
+        //     width: 100vw;
+        //     height: 100vh;
+        // }
     }
 }
 // .container {

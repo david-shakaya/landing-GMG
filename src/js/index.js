@@ -18,6 +18,9 @@ const paginationSliderBtn = document.querySelectorAll(
 
 paginationSliderBtn.forEach(btn => (btn.textContent = ''));
 
+const footerBtnArrow = document.querySelector('.footer__btn-arrow');
+footerBtnArrow.textContent = '';
+
 // SLIDER
 
 new Splide('#splide', {

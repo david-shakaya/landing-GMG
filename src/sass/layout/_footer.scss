@@ -44,10 +44,40 @@
 }
 // .container {
 // }
-// .footer {
-//   &__text-copyright {
-//   }
-// }
+.footer {
+    background: #e8e8e8;
+    position: relative;
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+    &__text-copyright {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+
+        color: $body;
+    }
+
+    &__btn-arrow {
+        position: absolute;
+        right: 56px;
+        bottom: 78px;
+
+        width: 44px;
+        height: 44px;
+        border: none;
+
+        box-shadow: 0px 8px 20px rgba(254, 87, 34, 0.1);
+        border-radius: 3px;
+        background-color: $btn-color;
+
+        background-image: url(../images/footer/bytesize_arrow-top.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
 .footer-menu {
     &__item {
         &:nth-child(1) {
@@ -71,6 +101,7 @@
     &__list {
         display: flex;
         width: 697px;
+        margin-top: 5px;
     }
 }
 .footer-submenu {
@@ -91,21 +122,40 @@
         margin-top: 14px;
     }
 }
-// .footer-text {
-//   &__description {
-//   }
-//   &__flex-left {
-//   }
-//   &__flex-right {
-//   }
-//   &__title {
-//   }
-// }
+.footer-text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+
+    color: $body;
+
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+
+    &__description {
+        font-size: 14px;
+    }
+    &__flex-left {
+        width: 570px;
+    }
+    &__flex-right {
+        width: 570px;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 16px;
+
+        margin-bottom: 9px;
+    }
+}
 // .logo {
 // }
 .payment {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
     &__item {
         &:not(:last-child) {
             margin-right: 24px;
@@ -114,17 +164,30 @@
     &__list {
         display: flex;
         align-items: center;
+        margin-right: 266px;
     }
     //   &__logo {
 }
 
 // }
 .payment-text {
-    //   &__item {
-    //   }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 54px;
+        }
+        &:nth-child(3) {
+            margin-right: 63px;
+        }
+    }
     &__list {
         display: flex;
     }
-    //   &__text {
-    //   }
+    &__text {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: $title-text;
+    }
 }

@@ -9,14 +9,34 @@
         display: flex;
     }
     &__item {
+        position: relative;
+        padding-left: 52px;
         &:not(:last-child) {
             margin-bottom: 30px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            transform: translate(-14px, 0px);
+            background-color: rgba(235, 87, 87, 1);
         }
     }
     //   &__list {
     //   }
-    //   &__number {
-    //   }
+    &__number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgba(235, 87, 87, 1);
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
     &__subtitle {
         font-family: $main-font;
         font-style: normal;
@@ -31,8 +51,15 @@
     &__text {
         margin-bottom: 34px;
     }
-    //   &__text-subtitle {
-    //   }
+    &__text-subtitle {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: $body;
+    }
     &__title {
         margin-bottom: 30px;
     }

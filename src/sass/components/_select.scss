@@ -1,0 +1,71 @@
+.select.is-active .select__body {
+    position: relative;
+    display: block;
+}
+
+.select__header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-top: 7px;
+    margin-bottom: 14px;
+    opacity: 0.7;
+
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
+}
+.select__current {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #cbcbcb;
+}
+
+.select__current.is-active {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    color: $body;
+}
+.select__icon {
+    height: 6px;
+    margin-left: auto;
+    width: 12px;
+
+    background-image: url('../images/form/tesr-arr.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.select__body {
+    border: 1px solid #cccccc;
+    border-top: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
+.select__item {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+}
+
+.select__item:hover {
+    background-color: #f2f2f2;
+}

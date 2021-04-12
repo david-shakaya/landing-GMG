@@ -1,6 +1,4 @@
 .about-product {
-    // background-color: rgba(204, 204, 204, 0.1);
-
     &__card {
         padding-top: 33px;
         text-align: left;
@@ -55,22 +53,12 @@
         width: 222px;
     }
     &__title {
-       
         margin-bottom: 30px;
     }
     &__wrapper {
         position: relative;
         text-align: center;
         overflow: hidden;
-        // background-blend-mode: multiply;
-
-        // background-image: url('../../images/about-product/earth.svg');
-        // max-width: 1202px;
-
-        // max-width: 1920px;
-        // background-color: rgba(15, 16, 16, 0.6);
-
-        // background-size: cover;
 
         &::after {
             background-blend-mode: multiply;
@@ -90,7 +78,7 @@
             background-position: center;
             background-repeat: no-repeat;
 
-            background-image: url(../../images/about-product/Component1.svg);
+            background-image: url(../images/about-product/com.png);
             opacity: 0.2;
 
             background-color: rgba(196, 196, 196, 1);
@@ -130,19 +118,3 @@
         display: flex;
     }
 }
-// .container {
-// }
-
-// .mb_parallax_container {
-//     height: 100vh;
-//     width: 100vw;
-//     border-bottom: 10px solid black;
-//     padding-top: 20vh;
-//     background-attachment: fixed;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// }
-
-// #mb_parallax_one {
-//     background-image: url('../../images/about-product/earth.svg');
-// }

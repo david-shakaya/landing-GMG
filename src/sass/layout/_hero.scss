@@ -50,14 +50,30 @@
         margin-bottom: 50px;
     }
     &__wrapper {
-        background-blend-mode: multiply;
+        // background-blend-mode: multiply;
         padding-bottom: 212px;
         padding-top: 207px;
         max-width: 1920px;
         background-color: rgba(15, 16, 16, 0.6);
-        background-image: url(../images/hero/Depositph.jpg);
-        background-size: cover;
+        // background-image: url(../images/hero/Depositph.jpg);
+        // background-size: cover;
 
-        background-position-x: center;
+        // background-position-x: center;
     }
+}
+
+.titler {
+    height: 1338px;
+    position: relative;
+    width: 3036px;
+
+    background-blend-mode: multiply;
+    padding-bottom: 212px;
+    padding-top: 207px;
+    max-width: 5020px;
+    background-color: rgba(15, 16, 16, 0.6);
+    background-image: url(../images/hero/Depositph.jpg);
+    background-size: cover;
+
+    background-position-x: center;
 }

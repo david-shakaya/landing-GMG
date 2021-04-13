@@ -5,7 +5,7 @@
     }
     &__description {
         display: flex;
-        padding-top: 128px;
+        padding-top: 55px;
         margin-bottom: 10px;
     }
     //   &__icon {
@@ -59,6 +59,10 @@
         position: relative;
         text-align: center;
         overflow: hidden;
+        position: relative;
+        margin-top: 228px;
+        z-index: 3;
+        background: rgb(255, 255, 255);
 
         &::after {
             background-blend-mode: multiply;
